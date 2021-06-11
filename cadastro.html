@@ -1,0 +1,48 @@
+<style>
+    body{
+        font-family: sans-serif;
+        background: linear-gradient(#b53ce7, #491581);
+
+    }
+    .cadastro{
+        box-shadow: -15px -15px 50 px #000;
+        background-color: #e1aef7;
+        border-radius: 15px;
+        width: 400px;
+        margin: auto;
+        padding: 10px;
+    }
+
+</style>
+
+
+
+<div class="cadastro">
+<form name="dados" method="post" action="">
+    <label><h1>cadastro</h1></label>
+    código
+    <input type="text" name="txtcodigo" size="5" maxlength="5" required></br>
+    nome
+    <input type="text" name="txtnome" size="30" maxlength="30" required></br>
+    data de nascimento
+    <input type="text" name="txtdatanas"></br>
+    sexo:<br>
+    <input type="radio" name="sexo" value="feminino">feminino
+    <input type="radio" name="sexo" value="masculino">masculino<br>
+    cargo: <br>
+    <select>
+        <option>selecione...</option>
+        <option>analista de sistemas</option>
+        <option>gerente de projeto</option>
+        <option disabled>digitador</option>
+    </select><br>
+    cursos: <br>
+    <input type="checkbox" name="ingles">Inglês<br>
+    <input type="checkbox" name="informatica">Informática<br>
+    <input type="checkbox" name="mecanica">Mecânica<br>
+    obs.:<br>
+    <textarea rows="10" cols="40" name="txtobs"></textarea><br>
+    <input type="submit". name="btnenviar" value="enviar">
+</form>
+
+</div>
