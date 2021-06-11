@@ -1,0 +1,88 @@
+<html>
+	<head>
+		<title>Menu Horizontal</title>
+		<meta charset="UTF-8" />
+		<style type="text/css">
+		body { 
+              background-image: url('fundo1.png');
+              background-repeat: no-repeat;
+              background-attachment: fixed;
+              background-size: 100% 100%; 
+              }
+		.menu ul li{
+			background-color: #6da3f9;
+			float: left;
+			width: 190px;
+			height: 40px;
+			display: inline-block;
+			text-align: center;
+			line-height: 40px;
+			font-size: 20px;
+			position: relative;
+		}
+
+		.menu ul li:hover{
+			background-color: #2c69cc;
+		}
+
+		.menu ul{
+			padding: 0;
+		}
+
+		.menu ul ul{
+			display: none;
+		}
+
+		.menu ul li:hover > ul{
+			display:block;
+		}
+
+		.menu ul ul ul{
+			margin-left: 191px;
+			top: 0px;
+			position: absolute;
+		}
+
+		.menu ul ul li:hover{
+			background-color: #FF6347;
+		}
+
+		.menu ul ul ul li:hover{
+			background-color: #062a66;
+		}
+
+		.menu a{
+			color: white;
+			text-decoration: none;
+		}
+		
+	</style>
+	</head>
+	<body>
+		<nav class="menu">
+			<ul>
+				<li><a href="#">Argentina</a></li>
+				<li><a href="#">Brasil</a>
+					<ul>
+						<li><a href="#">Americana</a></li>
+						<li><a href="#">Santos</a>
+						    <ul>
+								<li><a href="#">Gonzaga</a></li>
+								<li><a href="#">Boqueirão</a></li>
+								<li><a href="#">Centro</a></li>
+                            </ul>
+						</li>	
+                        <li><a href="#">São Paulo</a></li>
+						<li><a href="#">Sorocaba</a></li>
+						<li><a href="#">Votorantim</a></li>
+					</ul>
+				</li>
+				<li><a href="#">Bolívia</a></li>
+				<li><a href="#">Colombia</a></li>
+				<li><a href="#">Chile</a></li>
+				<li><a href="#">Peru</a></li>
+				<li><a href="#">Venezuela</a></li>
+			</ul>	
+		</nav>
+	</body>
+</html>
